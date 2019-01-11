@@ -5,6 +5,9 @@ builds:
     chart: cluster-manager-api
     value: image.repo
     dockerContext: .
+  - image: samsung_cnct/kind
+    context: kind
+    dockerContext: .
 deployments:
   - chart: cluster-manager-api
     timeout: 600
